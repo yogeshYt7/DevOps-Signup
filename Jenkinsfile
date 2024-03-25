@@ -4,11 +4,6 @@ pipeline {
         maven 'maven'
     }
     stages {
-        stage('clone') {
-            steps {
-                git 'https://github.com/yogeshYt7/DevOps-Signup.git'
-            }
-        }
         stage('validate') {
             steps {
                 echo 'validation done'
